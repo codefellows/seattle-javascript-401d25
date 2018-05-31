@@ -1,8 +1,8 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Code Fellows Seattle, Javascript 401d23
+![cf](http://i.imgur.com/7v5ASc8.png) Code Fellows Seattle, Javascript 401d25
 =====================================
 > Advanced Software Development
 
-[![](https://img.shields.io/badge/labs-401d23-yellow.svg)](https://github.com/codefellows-seattle-javascript-401d23)
+[![](https://img.shields.io/badge/labs-401d25-yellow.svg)](https://github.com/seattle-javascript-401d25)
 
 
 # Welcome
