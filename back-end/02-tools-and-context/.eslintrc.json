@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb-base","plugin:jest/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["jest"],
+  "rules": {
+    "global-require": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "no-multi-assign": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-trailing-spaces":"off",
+    "linebreak-style": "off",
+    "strict": "off"
+  }
+}
