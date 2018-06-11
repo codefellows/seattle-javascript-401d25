@@ -11,10 +11,10 @@
 * Read [simple wiki big o]
 * Watch [hacker rank big o video]
 * Skim at [big o cheat sheet]
-* Watch [funfunfunction functional programming video series]
-* Read [what is functional programming]
-* Read [Why functional programming](https://github.com/getify/Functional-Light-JS/blob/master/ch1.md)
-* Skim [functional programming jargon]
+* Watch [funfunfunction functional programming video series](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+* Read [what is functional programming](http://blog.jenkster.com/2015/12/what-is-functional-programming.html)
+* Read [Why functional programming](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch1.md/#chapter-1-why-functional-programming)
+* Skim [functional programming jargon](https://github.com/hemanth/functional-programming-jargon#functional-programming-jargon)
 
 ## Outline
 
