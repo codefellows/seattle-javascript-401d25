@@ -6,10 +6,8 @@
 * Students will understandt he concepts of the linked list data structure
 
 ## Resources
-* Watch [linked lists]
-* Skim [linked list wiki]
-* Watch [linked lists]
-* Skim [linked list wiki]
+* Watch [linked lists] (https://www.youtube.com/watch?v=njTh_OwMljA)
+* Skim [linked list wiki](https://en.wikipedia.org/wiki/Linked_list)
 * Read [simple wiki big o]
 * Watch [hacker rank big o video]
 * Skim at [big o cheat sheet]
