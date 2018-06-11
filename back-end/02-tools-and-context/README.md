@@ -15,6 +15,10 @@
 * Read [node error docs]
 * Read [mdn this]
 * Watch [javascript context tutorial]
+* Watch [funfunfunction functional programming video series](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+* Read [what is functional programming](http://blog.jenkster.com/2015/12/what-is-functional-programming.html)
+* Read [Why functional programming](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch1.md/#chapter-1-why-functional-programming)
+* Skim [functional programming jargon](https://github.com/hemanth/functional-programming-jargon#functional-programming-jargon)
 
 ## Outline
 
