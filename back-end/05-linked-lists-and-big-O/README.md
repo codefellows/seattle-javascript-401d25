@@ -8,6 +8,10 @@
 * Students will be able to implement a functional, array-like, list with `map`, `filter`, `reduce`, and `forEach` methods
 
 ## Resources
+* Watch [linked lists]
+* Skim [linked list wiki]
+* Watch [linked lists]
+* Skim [linked list wiki]
 * Read [simple wiki big o]
 * Watch [hacker rank big o video]
 * Skim at [big o cheat sheet]
