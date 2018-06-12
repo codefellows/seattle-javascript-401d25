@@ -3,7 +3,6 @@
 > Advanced Software Development
 
 [![](https://img.shields.io/badge/labs-401d25-yellow.svg)](https://github.com/seattle-javascript-401d25)
-[![Build Status](https://travis-ci.org/JudyVue/01-TDD.svg?branch=master)](https://travis-ci.org/JudyVue/01-TDD.svg?branch=master)
 
 
 # Welcome
