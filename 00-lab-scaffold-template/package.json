@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.9.1",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "winston": "^3.0.0"
   }
 }
