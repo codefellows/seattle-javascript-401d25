@@ -1,4 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 06: TCP Server
+![cf](https://i.imgur.com/7v5ASc8.png) Day 06: TCP Server
 ======
 
 ## Learning Objectives  
