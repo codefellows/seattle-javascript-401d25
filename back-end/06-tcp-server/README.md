@@ -9,6 +9,7 @@
 ## Resources
 * Skim [net module docs](https://nodejs.org/api/net.html)
 * Skim [events api docs](https://nodejs.org/api/events.html)
+* Watch [How does the Internet Work in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
 * **Windows users only**: Please watch [this video](https://www.youtube.com/watch?v=WkSOHBrdeB8&list=PLVngfM2hsbi_DnO3_JQSgt0Wvipc5Edl5&index=21&t=1s) on how to install a tool called **Putty** that you will need to be successful for Lab 6. 
 
 ## Outline
