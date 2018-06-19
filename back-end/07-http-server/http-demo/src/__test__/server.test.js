@@ -23,7 +23,7 @@ describe('VALID request to the API', () => {
 
   describe('GET /cowsayPage', () => {
     const mockCow = cowsay.say({ text: 'Hello World' });
-    const mockHtml = `<section><h3><a href="/time">Click here for current time</a></h3><pre>${mockCow}</pre></section>`;
+    const mockHtml = `<section><h3><a href="api/time">Click here for current time</a></h3><pre>${mockCow}</pre></section>`;
     it('should respond with status 200 and return cow HTML', () => {
       return superagent.get(`${apiUrl}/cowsayPage`)
         .query({ text: 'Hello World' })
