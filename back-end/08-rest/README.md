@@ -7,6 +7,7 @@
 
 ## Resources
 * Read [getting started with promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
+* Read [Master the Javascript Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 * Watch [promises](https://www.youtube.com/watch?v=2d7s3spWAzo)
 
 ## Outline
