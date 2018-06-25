@@ -2,7 +2,7 @@
 
 const winston = require('winston');
 
-const logger = module.exports = winston.createLogger({
+const devLogger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
   transports: [
@@ -11,6 +11,11 @@ const logger = module.exports = winston.createLogger({
   ],
 });
 
-logger.INFO = 'info';
-logger.ERROR = 'error';
+devLogger.INFO = 'info';
+devLogger.ERROR = 'error';
 
+const produdctionLogger = {
+  log: () => ({}),
+};
+
+module.exports = process.env.NODE_ENV === 'production' ? produdctionLogger : devLogger;
