@@ -7,6 +7,7 @@
 ## Readings
 * Read [BST interview questions](https://khan4019.github.io/front-end-Interview-Questions/bst.html)
 * Read [Traversing a tree](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+* Read [How Not to be Stumped By Trees](https://medium.com/basecs/how-to-not-be-stumped-by-trees-5f36208f68a7)
 
 ## Outline
 
