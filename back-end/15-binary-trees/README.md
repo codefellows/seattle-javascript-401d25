@@ -28,6 +28,7 @@ Trees are a widely used data structure that simulate a hierarchical "tree" struc
   * **depth:** - the distance (# of edges) from a node to the root
     * The root node will always have a depth of 0
   * **level:** - nodes that exist at the same height in a tree (1-based)
+  * **width:** - number of nodes that share the same level 
   * **balance:** - if the height of both sides of a tree are <= 1, the tree is balanced
    
 ### Traversing a Tree
