@@ -21,14 +21,15 @@ Trees are a widely used data structure that simulate a hierarchical "tree" struc
   * **parent:** - a node that links down to other nodes (is the root of a sub-tree)
   * **child:** - a node that's a direct sub-tree of another node
   * **siblings:** - a group of nodes with the same parent
-  * **leaf:** - a node with node children
+  * **leaf:** - a node with no children
   * **edge:** - a connection (link) between nodes
   * **height:** - the distance (# of edges) from the root of a tree or sub-tree to the furthest leaf
     * Leaves will always have a height of zero
   * **depth:** - the distance (# of edges) from a node to the root
     * The root node will always have a depth of 0
   * **level:** - nodes that exist at the same height in a tree (1-based)
-  * **balance:** - if the height of both sides of a tree are <= 1, the tree is balanced
+  * **width:** - number of nodes that share the same level 
+  * **balance:** - if the difference in height of both sides of a tree are <= 1, the tree is balanced
    
 ### Traversing a Tree
 In/Pre/Post order are all "depth first" searching methods that center themselves on in the order in which we visit the root node.  
