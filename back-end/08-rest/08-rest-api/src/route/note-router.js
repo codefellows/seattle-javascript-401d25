@@ -3,7 +3,6 @@
 const Note = require('../model/note');
 const logger = require('../lib/logger');
 const customResponse = require('../lib/response');
-
 module.exports = (router) => {
   router.post('/api/v1/note', (request, response) => {
     logger.log(logger.INFO, 'ROUTE-NOTE: POST /api/v1/note');

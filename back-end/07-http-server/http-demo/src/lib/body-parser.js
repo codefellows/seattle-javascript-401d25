@@ -5,11 +5,8 @@ const queryString = require('querystring');
 
 module.exports = function bodyParser(req) {
   return new Promise((resolve, reject) => {
-    console.log(req.url, 'BEFORE PARSINGS');
     req.url = url.parse(req.url);
     req.url.query = queryString.parse(req.url.query);
-    console.log(req, 'req');
-    console.log(req.url, 'REQ.URL');
 
     if (req.method !== 'POST' && req.method !== 'PUT') {
       return resolve(req);

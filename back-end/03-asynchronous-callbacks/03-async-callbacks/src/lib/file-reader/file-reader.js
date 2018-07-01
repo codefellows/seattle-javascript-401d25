@@ -16,7 +16,7 @@ fileReader.readFile = (filePath) => {
 
 fileReader.readThreeFiles = (filePath1, filePath2, filePath3, callback) => {
   return fs.readFile(filePath1, (err1, data1) => {
-    if (err1) return callback(err1);
+    if (err1) throw err1;
     return fs.readFile(filePath2, (err2, data2) => {
       if (err2) return callback(err2);
       return fs.readFile(filePath3, (err3, data3) => {

@@ -1,7 +1,8 @@
 'use strict';
 
 import mongoose from 'mongoose';
-
+// MongoDB is nonrelational, NoSQL databse
+// validation purposes
 const classRoomSchema = mongoose.Schema({
   name: {
     type: String,

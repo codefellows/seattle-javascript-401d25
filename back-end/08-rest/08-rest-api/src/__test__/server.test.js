@@ -51,7 +51,7 @@ describe('GET /api/v1/note', () => {
       .then((note) => {
         mockResourceForGet = note;
       })
-      .catch((err) => {
+      .catch((err) => { 
         throw err;
       });
   });

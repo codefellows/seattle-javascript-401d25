@@ -3,7 +3,6 @@
 import mongoose from 'mongoose';
 import Classroom from './classroom';
 
-
 const studentSchema = mongoose.Schema({
   first: {
     type: String,

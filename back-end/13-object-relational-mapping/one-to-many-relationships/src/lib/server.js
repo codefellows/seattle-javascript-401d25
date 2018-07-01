@@ -20,8 +20,8 @@ app.use(express.json());
 
 // our own modules
 app.use(loggerMiddleware);
-app.use(classroomRouter);
 app.use(studentRouter);
+app.use(classroomRouter);
 
 app.use(errorMiddleWare);
 

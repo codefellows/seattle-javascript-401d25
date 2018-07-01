@@ -2,6 +2,7 @@ import { Router } from 'express';
 import HttpErrors from 'http-errors';
 import logger from '../lib/logger';
 import Student from '../model/student';
+import classroom from '../model/classroom';
 
 const studentRouter = new Router();
 

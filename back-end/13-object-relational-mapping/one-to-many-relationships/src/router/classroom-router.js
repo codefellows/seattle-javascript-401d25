@@ -4,7 +4,6 @@ import { Router } from 'express';
 import logger from '../lib/logger';
 import Classroom from '../model/classroom';
 
-
 const classRoomRouter = new Router();
 
 classRoomRouter.post('/api/classrooms', (request, response, next) => {

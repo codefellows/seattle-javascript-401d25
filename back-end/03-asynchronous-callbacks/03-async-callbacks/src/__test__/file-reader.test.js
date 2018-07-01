@@ -21,18 +21,20 @@ describe('testing fileReader module that reads there files', () => {
     ];
   });
 
-  test('should show that the data we read from readThreeFiles equals the data in our mockData array', () => {
+  test('should show that the data we read from readThreeFiles equals the data in our mockData array', (done) => {
     fileReader.readThreeFiles(mockText1, mockText2, mockText3, (err, data1, data2, data3) => {
       expect(data1).toEqual(mockData[0]);
       expect(err).toBeNull();
+      done();
       // put more expect statements
     });
   });
 
-  test('should return an error for a bad file path on the first item', () => {
-    fileReader.readThreeFiles('bad path', mockText2, mockText3, (err, data1, data2, data3) => {
+  test('should return an error for a bad file path on the first item', (done) => {
+    fileReader.readThreeFiles('bad path', mockText2, mockText3, (err) => {
       expect(err).toHaveProperty('errno');
       expect(err.code).toEqual('ENOENT');
+      done();
     });
   });
 });
