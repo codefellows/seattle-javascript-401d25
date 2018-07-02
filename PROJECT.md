@@ -1,6 +1,6 @@
 # Entity Relationship Diagram, User Stories, Models, and Route Planning
 
-## [Submit on Canvas](https://canvas.instructure.com/courses/1343256/assignments/8637260/) the following items **by July 15, 11:59pm**:
+## [Submit on Canvas](https://canvas.instructure.com/courses/1343256/assignments/8637260/) the following items **by July 8, 11:59pm**:
   * A *shareable* link to your entity relationship diagram
   * A link to your group's Trello board that lists all your user stories, time estimated for each story, and assigned appropriately to team members
   * A list and written description of your planned models and their relationships to each other (this is *in addition* to your ERD)
