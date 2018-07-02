@@ -8,6 +8,7 @@
     "test": "eslint . --fix && jest --coverage --detectOpenHandles --forceExit --runInBand",
     "testWatch": "jest --coverage --watchAll",
     "test-nolint": "jest --coverage --detectOpenHandles --forceExit --runInBand",
+    "test-logs": "jest --coverage --detectOpenHandles --runInBand",
     "lint": "eslint .",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
     "dboff": "killall mongod",
