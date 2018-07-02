@@ -26,6 +26,7 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "dotenv": "^6.0.0",
     "eslint": "^4.19.1",
@@ -40,7 +41,6 @@
     "winston": "^3.0.0"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongoose": "^5.1.6"
   }
