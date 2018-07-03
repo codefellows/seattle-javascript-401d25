@@ -8,7 +8,6 @@ const authRouter = new Router();
 
 
 authRouter.post('/api/signup', (request, response, next) => {
-  console.log(request.body, 'omgwhat');
   Account.init()
     .then(() => {
       return Account.create(request.body.username, request.body.email, request.body.password)

@@ -6,8 +6,8 @@ import HttpErrors from 'http-errors';
 
 
 // a common styling convention is to capitalize constant strings and numbers
-const HASH_ROUNDS = 1;
-const TOKEN_SEED_LENGTH = 128;
+const HASH_ROUNDS = 8;
+const TOKEN_SEED_LENGTH = 50;
 
 // this schema should never be send over the server in an API call. This data should only ever stay in the database
 

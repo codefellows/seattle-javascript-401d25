@@ -2,6 +2,7 @@ import HttpErrors from 'http-errors';
 import Account from '../../model/account';
 
 export default (request, response, next) => {
+  // You can replace all the error handling with next with "throw"
   if (!request.headers.authorization) return next(new HttpErrors(400, 'AUTH MIDDLEWARE - invalid request'));
 
   // if i make it past the if statement, I know I have the right headers
