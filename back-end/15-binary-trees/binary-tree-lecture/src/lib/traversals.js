@@ -1,5 +1,6 @@
 
-// Time complexity for all traversals: O(n) where n is the number of noes
+// Time complexity for all traversals: O(n) where n is the number of nodes
+// Space complexity of depth-first traversals: O(h), where h is the height of the tree
 const preOrderTraversal = (rootNode, callback) => {
   // pre-order: root, left, right
   if (!rootNode) return undefined;
