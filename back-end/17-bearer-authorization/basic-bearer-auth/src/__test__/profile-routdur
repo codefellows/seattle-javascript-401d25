@@ -1,0 +1,38 @@
+import superagent from 'superagent';
+import faker from 'faker';
+import { startServer, stopServer } from '../lib/server';
+import { createAccountMockPromise } from './lib/account-mock';
+import { removeAllResources } from './lib/profile-mock';
+
+const apiUrl = `http://localhost:${process.env.PORT}/api`;
+
+
+describe('TESTING PROFILE ROUTER', () => {
+  beforeAll(startServer);
+  afterAll(stopServer);
+  afterEach(removeAllResources);
+
+  test('POST 200 to /api/profiles for successfully created profile', () => {
+    let mockAccountData = null;
+    const mockProfile = {
+      bio: faker.lorem.words(20),
+      firstName: 'Judy',
+      lastName: 'uniqueLastName',
+    };
+    return createAccountMockPromise()
+      .then((mockAccountResponse) => {
+        mockAccountData = mockAccountResponse;
+        return superagent.post(`${apiUrl}/profiles`)
+          .set('Authorization', `Bearer ${mockAccountData.token}`)
+          .send(mockProfile);
+      })
+      .then((response) => {
+        expect(response.status).toEqual(200);
+        expect(response.body.accountId).toEqual(mockAccountData.account._id.toString());
+        expect(response.body.firstName).toEqual(mockProfile.firstName);
+        expect(response.body.lastName).toEqual(mockProfile.lastName);
+        expect(response.body.bio).toEqual(mockProfile.bio);
+      });
+  });
+});
+
