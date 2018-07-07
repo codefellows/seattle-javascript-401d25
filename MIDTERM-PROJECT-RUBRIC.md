@@ -43,7 +43,7 @@
 
 ## Exceptions
   * Exceptions for above requirements can be made if you demonstrate that you are adding a different layer of complexity that interferes with meeting the requirements. 
-  * For example, if you wish to deploy on a TCP server, you do not need to meet the 85% testing requirement as TCP server testing is complex. If you decide to implement complex user/admin permissions, you may forgo your 3-model requirment, etc.
+  * For example, if you wish to deploy on a TCP server, you do not need to meet the 85% testing requirement as TCP server testing is complex. If you decide to implement complex user/admin permissions, you may forgo your 3-model requirement, etc.
   * **Please consult with the instructional team first about receiving an exception before you move forward.**
 
 ## Continous Integration/Continuous Deployment Requirements
