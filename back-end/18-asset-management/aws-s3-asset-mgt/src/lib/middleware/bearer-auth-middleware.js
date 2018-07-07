@@ -4,7 +4,6 @@ import { promisify } from 'util';
 import Account from '../../model/account';
 
 const jwtVerify = promisify(jsonWebToken.verify);
-require('dotenv').config();
 
 export default (request, response, next) => {
   if (!request.headers.authorization) return next(new HttpErrors(400, 'BEARER AUTH MIDDLEWARE: no headers auth'));
@@ -25,7 +24,6 @@ export default (request, response, next) => {
     })
     .then((account) => {
       if (!account) return next(new HttpErrors(400, 'BEARER AUTH - no account found'));
-
       request.account = account;
       return next();
     })

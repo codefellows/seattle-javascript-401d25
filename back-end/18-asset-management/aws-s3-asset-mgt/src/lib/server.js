@@ -30,13 +30,11 @@ app.use(authRouter);
 app.use(profileRouter);
 app.use(soundRouter);
 // catch all
+app.use(errorMiddleWare);
 app.all('*', (request, response) => {
   console.log('Returning a 404 from the catch/all route');
   return response.sendStatus(404).send('Route Not Registered');
 });
-
-app.use(errorMiddleWare);
-
 
 const startServer = () => {
   return mongoose.connect(process.env.MONGODB_URI)

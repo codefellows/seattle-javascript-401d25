@@ -20,7 +20,7 @@ const s3Upload = (path, key) => {
       logger.log(logger.INFO, `RECEIVED RESPONSE FROM AWS: ${JSON.stringify(response, null, 2)}`);
       return fs.remove(path)
         .then(() => response.Location) // this returns the generated AWS S3 bucket URL for our file after a successful upload to S3
-        .catch(Promise.reject);
+        .catch(err => Promise.reject(err));
     }) 
     .catch((err) => {
       return fs.remove(path)

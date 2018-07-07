@@ -61,8 +61,6 @@ describe('AUTH router', () => {
       });
   });
 
-
-
   test('GET 400 to /api/login for unsuccesful login with bad username and password', () => {
     return superagent.get(`${apiUrl}/login`)
       .auth('bad username', 'bad password')

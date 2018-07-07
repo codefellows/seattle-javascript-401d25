@@ -11,6 +11,18 @@ const multerUpload = multer({ dest: `${__dirname}/../temp` });
 
 const soundRouter = new Router();
 
+/*
+  multerupload.any = function() {
+    /// stuff happens here
+    return function (request, response, next) {
+      // logic of inner function 
+    }
+  }
+
+  multerupload.any()
+
+*/
+// multerUpload.any()(request, request, next)
 soundRouter.post('/api/sounds', bearerAuthMiddleware, multerUpload.any(), (request, response, next) => {
   if (!request.account) return next(new HttpErrors(401, 'SOUND ROUTER POST ERROR: not authorized'));
 
@@ -21,7 +33,7 @@ soundRouter.post('/api/sounds', bearerAuthMiddleware, multerUpload.any(), (reque
   }
 
   // request.files is an array with only one item in it
-  // same as const file = requuest.files[0];
+  // same as const file = request.files[0];
   const [file] = request.files;
   // these are properties on the "file" we extracted above. Console.log here to see how it looks
   logger.log(logger.INFO, `SOUND ROUTER POST: valid file ready to to upload: ${JSON.stringify(file, null, 2)}`);

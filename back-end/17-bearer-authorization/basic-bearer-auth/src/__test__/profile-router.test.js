@@ -11,7 +11,6 @@ describe('TESTING ROUTER PROFILE', () => {
   let token;
   let account;
   beforeAll(async () => {
- 
     startServer();
   });
   afterAll(stopServer);
