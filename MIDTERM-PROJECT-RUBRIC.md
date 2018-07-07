@@ -32,7 +32,7 @@
 * Each of your resources should be associated with a full-CRUD route, i.e. `GET, PUT, POST, and DELETE` actions should be implemented on each resource.
 * Mongoose/MongoDB queries should be appropriate for each route (i.e. a `GET` route should be using a `findOne/findById` method from Mongoose, and a `POST` route should be using `save`). 
 * Mongoose/MongoDB queries should be done using their promisified versions, not their `(err,data)`-callback-based versions. Your promise chain should handle successful responses and errors accordingly in appropriately placed `.then` and `.catch` blocks. 
-* Endpoint naming should be consistent across all routes in terms of resource naming convention (best to keep resources pluralized) and capitalization (best to keep everything lowecased)
+* Endpoint naming should be consistent across all routes in terms of resource naming convention (best to keep resources pluralized) and capitalization (best to keep everything lowercased)
 * All your routes' callbacks should follow a signature of `(request, response, next)` and error handling should be offloaded to error middleware. 
 
 ## Documentation Requirements
