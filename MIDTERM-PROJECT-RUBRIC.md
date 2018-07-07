@@ -38,7 +38,7 @@
 ## Documentation Requirements
 * You should ideally be writing documentation for any newly created routes *every day*. 
 * Read through [this blog](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) on how to write a good README.
-* Skim through the [Pokemon API](https://pokeapi.co/docsv2/) for an example writing good docs that clearlyl instruct a developer how to use your API properly
+* Skim through the [Pokemon API](https://pokeapi.co/docsv2/) for an example writing good docs that clearly instruct a developer how to use your API properly
 * Skim through a previous CF project called [shooters-log](https://github.com/gsmatth/shooters-log) for another example of writing a great README. 
 
 ## Exceptions
