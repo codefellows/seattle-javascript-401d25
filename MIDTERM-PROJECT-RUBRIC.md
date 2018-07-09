@@ -32,18 +32,18 @@
 * Each of your resources should be associated with a full-CRUD route, i.e. `GET, PUT, POST, and DELETE` actions should be implemented on each resource.
 * Mongoose/MongoDB queries should be appropriate for each route (i.e. a `GET` route should be using a `findOne/findById` method from Mongoose, and a `POST` route should be using `save`). 
 * Mongoose/MongoDB queries should be done using their promisified versions, not their `(err,data)`-callback-based versions. Your promise chain should handle successful responses and errors accordingly in appropriately placed `.then` and `.catch` blocks. 
-* Endpoint naming should be consistent across all routes in terms of resource naming convention (best to keep resources pluralized) and capitalization (best to keep everything lowecased)
+* Endpoint naming should be consistent across all routes in terms of resource naming convention (best to keep resources pluralized) and capitalization (best to keep everything lowercased)
 * All your routes' callbacks should follow a signature of `(request, response, next)` and error handling should be offloaded to error middleware. 
 
 ## Documentation Requirements
 * You should ideally be writing documentation for any newly created routes *every day*. 
 * Read through [this blog](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) on how to write a good README.
-* Skim through the [Pokemon API](https://pokeapi.co/docsv2/) for an example writing good docs that clearlyl instruct a developer how to use your API properly
+* Skim through the [Pokemon API](https://pokeapi.co/docsv2/) for an example writing good docs that clearly instruct a developer how to use your API properly
 * Skim through a previous CF project called [shooters-log](https://github.com/gsmatth/shooters-log) for another example of writing a great README. 
 
 ## Exceptions
   * Exceptions for above requirements can be made if you demonstrate that you are adding a different layer of complexity that interferes with meeting the requirements. 
-  * For example, if you wish to deploy on a TCP server, you do not need to meet the 85% testing requirement as TCP server testing is complex. If you decide to implement complex user/admin permissions, you may forgo your 3-model requirment, etc.
+  * For example, if you wish to deploy on a TCP server, you do not need to meet the 85% testing requirement as TCP server testing is complex. If you decide to implement complex user/admin permissions, you may forgo your 3-model requirement, etc.
   * **Please consult with the instructional team first about receiving an exception before you move forward.**
 
 ## Continous Integration/Continuous Deployment Requirements

@@ -36,7 +36,7 @@
 * Your team should have *at least* three models. This *does not* include using the standard Acccount/Profile models provided, so you will need *three* more models in addition to those. You need to establish *at least two* one-many-relationships between those models. I.e. a user can have many blog posts, a blog post can have many comments, etc. These relationships should be clearly be indicated in your ERD.
 
 ### Routes
-* Your team should have full-CRUD routes planned out for each of your three extra models. Full-CRUD should also be done on your User/Profile models for best practices, but will not be included as a requirement for points in the grading rubric. 
+* Your team should have full-CRUD routes planned out for each of your three extra models. Full-CRUD should also be done on your User/Profile models for best practices. 
 * This means you must have **at least 12 routes** planned out (3 required models x 4 request methods of GET, PUT, POST, DELETE)
 * You should agree on the semantic naming of your routes that would make sense for consumers of your api. E.g., if you are making a pet adoption API and you want to return an array of just cats, should you have a route that is called `/api/pets/cats`, or should you have a route that reads as `/api/cats`? Your team needs to come to an agreement on these things and stay consistent with your chosen convention. 
 * You should make a design choice on how you handle the data in your database. I.e., if you delete a blog post that has many comments, should you also delete the comments? Come to an agreement with your group on your preferred design choice. 
