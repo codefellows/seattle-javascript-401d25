@@ -1,0 +1,84 @@
+- Count the number of operations
+	- in relation to the size of the input
+- Big O is not the 'be all end all'
+A -> O(n) B -> O(n)
+- 1,lg n, n, n^2,
+-log n vs lg n 
+log -> log base 10
+ln -> log base e
+lg -> log base 2 
+
+
+
+
+K-ary tree is going to be based in 
+
+O(H) = O(lg n) in a balanced tree. (Space and Time)
+
+In a hashmap O(1) (worst case is O(n))
+
+10 elements -> 
+15 ->
+
+
+
+
+
+
+const LinkedList = require('./linked-list');
+Array = (N)
+LinkedList = (2N) => N
+
++ - / * assignments ifs return
+const traversal = module.exports = {};
+
+traversal.findMatches = (rootNode, targetValue) => {
+  const matches = new LinkedList(); // O(1)  and O(1)
+  const traverseTree = (current) => {
+    if (current.value === targetValue) { // O(1) and O(1)
+      matches.insertAtHead(current); // O(1) in time. How many times will this line happen? O(M) where is the number of matches
+	matches.push(); // O(1), but sometimes it's going to be O(N)
+    }
+    if (current.children === []) { // O(1) time and space
+      return undefined; //  O(1) time and space
+    }
+    for (let x = 0; x < current.children.length; x++) { // This line es visiting the entire array of subtrees. O(n) TIME where in is the number of nodes
+      traverseTree(current.children[x]); // This line is visiting the ENTIRE sub-tree 
+    }
+    return undefined; // O(1) time O(1) space;
+  };
+  traverseTree(rootNode);  // O(n) time because we are visiting all the sub-trees and all its nodes
+  return matches; // O(1) time and space
+};
+
+           1
+      2  3  4
+    5 6
+  8
+10
+O(n) in time and O(H + M) -> O(N) in space where H is the height of the tree and M is the number of Matches
+traversal.findMatches = (rootNode, targetValue) => {
+  const matches = new LinkedList(); // O(1)  and O(1)
+  const traverseTree = (current) => {
+    if (current.value === targetValue) { 
+      matches.insertAtHead(current); 
+    }
+    if (current.children === []) { 
+      return undefined; Vinicio - THIS LINE IS IMPORTANT BECAUSE IT IMPLIES A POP
+    }
+    for (let x = 0; x < current.children.length; x++) { 
+      traverseTree(current.children[x]); // traverseTree(2) traversetree(5) traverseTree(8) traverseTree(10) // Continue with traverseTree(6)
+    }
+    return undefined; // Vinicio - THIS LINE IS IMPORTANT BECAUSE IN IMPLIES A POP 
+  };
+  traverseTree(rootNode);  // traverseTRee(1)
+  return matches; // O(1) time and space
+};
+
+O(n^2 + n + n + lg n) = O(n^2)
+
+
+O(H1 + H1) = O(H) where H is the biggest height
+O(T1 + T2) = O(T)
+
+

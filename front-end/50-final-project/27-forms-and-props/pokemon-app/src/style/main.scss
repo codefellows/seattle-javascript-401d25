@@ -1,0 +1,16 @@
+$background-color: #000000;
+$font-color: #FFFFFF;
+$error: #ff0000;
+
+html, body {
+  background: $background-color;
+}
+
+p, h1, h2, ul {
+  color: $font-color;
+}
+
+.error {
+  color: $error;
+}
+
