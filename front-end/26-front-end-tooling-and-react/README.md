@@ -7,6 +7,7 @@
 * Students will be able to create and render React components to the DOM
 * Students will be able to add event listeners to React components 
 * Students will be able to update React component state
+* Students will understand the concept of a hash map and know how to utilize Javascript's implementations of this data structure to solve real world problems
 
 ## Resources
 * Read [webpack concepts](https://webpack.js.org/concepts/)
@@ -14,6 +15,7 @@
 * Read [react hello world](https://facebook.github.io/react/docs/hello-world.html) 
 * Read [introducing JSX](https://facebook.github.io/react/docs/introducing-jsx.html)
 * Read [rendering elements](https://facebook.github.io/react/docs/rendering-elements.html)
+* Read [Taking Hash Tables off the Shelf](https://medium.com/basecs/taking-hash-tables-off-the-shelf-139cbf4752f0)
 
 ## Outline
 
