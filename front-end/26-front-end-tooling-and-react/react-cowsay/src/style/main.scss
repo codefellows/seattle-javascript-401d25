@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Gaegu);
+
+$gaegu: 'Gaegu';
+
+body {
+  background-color: #ffc1c1;
+  font-family: $gaegu;
+  color: #5b5bc8;
+
+  .cowsay {
+
+    label, button {
+      display: block;
+    }
+
+    ul {
+      display: inline-block;
+    }
+  }
+}
