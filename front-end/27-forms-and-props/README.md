@@ -11,6 +11,7 @@
 * Read [state and lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 * Read [handling events](https://facebook.github.io/react/docs/handling-events.html)
 * Read [forms](https://facebook.github.io/react/docs/forms.html)
+* Read [prop-types](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ## Outline
 
