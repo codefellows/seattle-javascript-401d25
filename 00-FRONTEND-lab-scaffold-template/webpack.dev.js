@@ -1,4 +1,4 @@
-'ues strict';
+'use strict';
 
 const { HotModuleReplacementPlugin } = require('webpack');
 const merge = require('webpack-merge');
