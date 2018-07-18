@@ -5,8 +5,6 @@ require('dotenv').config();
 const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const production = process.env.NODE_ENV === 'production'; // evals to a Boolean value
-
 const webpackConfig = module.exports = {};
 
 webpackConfig.entry = `${__dirname}/src/main.js`;
@@ -30,7 +28,7 @@ webpackConfig.module = {};
 
 webpackConfig.module.rules = [
   {
-    test: /\.(png|svg|jpg|gif)$/,
+    test: /\.(png|svg|jpg|gif)$/i,
     use: ['file-loader'],
   },
   {
