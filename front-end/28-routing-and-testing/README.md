@@ -12,6 +12,7 @@
 * Skim [es6 modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
 * Read [react-router-dom philosophy](https://reacttraining.com/react-router/web/guides/philosophy)
 * Read [lifting state up](https://facebook.github.io/react/docs/lifting-state-up.html)
+* Skim [SCSS docs starting from Partials downward](https://sass-lang.com/guide)
 * Skim [mdn import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 * Skim [mdn export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
