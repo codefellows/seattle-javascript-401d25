@@ -3,7 +3,7 @@
 
 ## Learning Objectives
 * Students will learn about the graph data structure
-* Students will understand the different ways to implemenet a graph data structure and their practical uses in the real world
+* Students will understand the different ways to implement a graph data structure and their practical uses in the real world
 
 ## Readings
 * Read [Graphs](https://codefellows.github.io/code-401-dotnet-guide/Curriculum/Class26/Resources/Graphs) (The example code is in C#, but can still be understood)
