@@ -7,6 +7,7 @@
 * Students will learn to design action creator functions for working with redux
 
 ## Readings
+* Read [A Cartoon Intro to Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
 * Read [redux readme](http://redux.js.org/)
 * Read [redux motivation](http://redux.js.org/docs/introduction/Motivation.html)
 * Read [redux core concepts](http://redux.js.org/docs/introduction/CoreConcepts.html)
