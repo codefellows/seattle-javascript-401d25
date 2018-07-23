@@ -10,8 +10,8 @@
 * Read [lists and keys](https://facebook.github.io/react/docs/lists-and-keys.html)
 * Read [composition vs inheritance](https://facebook.github.io/react/docs/composition-vs-inheritance.html)
 * Read [thinking in react](https://facebook.github.io/react/docs/thinking-in-react.html)
-* Skim [jest docs](https://facebook.github.io/jest/docs/en/getting-started.html)
-* Skim [enzyme docs](https://github.com/airbnb/enzyme)
+* Skim [Cypress docs](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-Requirements)
+* Watch [this quick tutorial on how to start Using Cypress](https://www.youtube.com/watch?v=-qqBHdgqCMI)
 
 ## Outline
 
