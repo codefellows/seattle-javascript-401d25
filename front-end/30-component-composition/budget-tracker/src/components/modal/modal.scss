@@ -1,0 +1,34 @@
+@import '../../style/vars';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $modal-color;
+
+  .modal-main {
+    position: fixed;
+    background: $modal-background;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    .close-btn {
+      float: right;
+    }
+
+    h3 {
+      clear: both;
+    }
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
