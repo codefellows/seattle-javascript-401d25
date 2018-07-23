@@ -4,6 +4,7 @@
 ## Learning Objectives
 * Students will learn to about composition vs inheritance
 * Students will learn how to compose react components using props
+* Students will be introduced to using Cypress, a populate integrated testing tool used for front end testing.
 
 ## Readings
 * Read [conditional rendering](https://facebook.github.io/react/docs/conditional-rendering.html)
