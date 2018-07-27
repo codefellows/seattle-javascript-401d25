@@ -1,31 +1,14 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 39: SVGS and Fonts
-===
+![cf](http://i.imgur.com/7v5ASc8.png) 38: File Reader API
+====
 
 ## Learning Objectives
-* Students will be able to load fonts with webpack
-* Students will be able to create icons using SVGs
-* Students will learn the difference between icon fonts and inline svgs
+* Students will learn to use the `FileReader` API to preview image files 
 
 ## Readings
-* Skim [url-loader docs](https://webpack.js.org/loaders/url-loader/)
-* Read [icon-font vs inline-vg](https://css-tricks.com/icon-fonts-vs-svg/)
+* Read [using files in web applications](https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications)
+* Skim [FileReader.readAsDataURL docs](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL)
 
 ## Outline
 
-### URL Loader
-The url loader can either copy an imported asset into the webpack build path, or turn it into a DataURL. This DataURL can be used to preview the image in the browser, prior to gaining a response from S3, and with the newly created AWS CDN url.
-
-### SVGs
-SVGs are natively supported in HTML. By using inline SVG's you open the potential for much more styling control.
-
-### Pro's and Con's to Inline SVG Usage
-
-##### Pros
-* use with templates
-* better scalability with client zoom
-* better general print quality
-* allow for CSS3 interactivity
-
-##### Cons
-* possibility of inconsistent rendering between browsers
-* file size can be massive if you are using an uncompressed `.svg`
+### Previewing Images
+Using the HTML5 FileReader API, browser applications can now ask users to read local files and then read the contents of those files. `<input>` tags of a `type="file"` can retrieve files from the user. Those files can then be loaded through the `FileReader`. Once th `FileReader` has loaded the contents of a file, it can then be processed as an ArrayBuffer, BinaryString, DataURL, or Text. After a user selects a photo, it can be previewed by loading the contents using the `FileReader` and then passing a DataURL into an `<img>` tag.
