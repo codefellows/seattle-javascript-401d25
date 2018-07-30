@@ -1,0 +1,27 @@
+{
+  "extends": ["airbnb-base","plugin:jest/recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "cypress/globals": true
+  },
+  "globals": {
+    "API_URL": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["jest", "react", "cypress"],
+  "rules": {
+    "arrow-body-style": "off",
+    "global-require": "off",
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "no-multi-assign": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-trailing-spaces":"off",
+    "linebreak-style": "off",
+    "strict": "off",
+    "no-underscore-dangle": "off",
+    "max-lines": "off",
+    "max-len": "off"
+  }
+}
