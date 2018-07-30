@@ -14,6 +14,7 @@ authRouter.post('/api/signup', (request, response, next) => {
           // we want to get rid of the password as early as possible
           delete request.body.password;
           logger.log(logger.INFO, 'AUTH-ROUTER /api/signup: creating token');
+          console.log(account, 'account')
           return account.createTokenPromise();
         })
         .then((token) => {
