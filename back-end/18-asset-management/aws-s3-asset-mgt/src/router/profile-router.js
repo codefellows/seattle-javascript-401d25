@@ -28,6 +28,17 @@ profileRouter.post('/api/profiles', bearerAuthMiddleware, (request, response, ne
   return undefined;
 });
 
+profileRouter.get('/api/profiles/me', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) return next(new HttpErrors(400, 'GET PROFILE ROUTER-AUTH: invalid request'));
+
+  return Profile.findOne({ accountId: request.account._id })
+    .then((profile) => {
+      if (!profile) return next(new HttpErrors(404, 'not found'));
+      return response.json(profile);
+    })
+    .catch(next);
+});
+
 profileRouter.get('/api/profiles/:id?', bearerAuthMiddleware, (request, response, next) => {
   if (!request.account) return next(new HttpErrors(400, 'GET PROFILE ROUTER-AUTH: invalid request'));
   if (!request.params.id) {
@@ -46,6 +57,21 @@ profileRouter.get('/api/profiles/:id?', bearerAuthMiddleware, (request, response
     })
     .catch(next);
   return undefined;
+});
+
+// TODO: make a new put route
+profileRouter.put('/api/profiles/:id?', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) return next(new HttpErrors(400, 'GET PROFILE ROUTER-AUTH: invalid request'));
+  if (!request.params.id) {
+    return next(new HttpErrors(400, 'No id entered'));
+  }
+  const options = { new: true, runValidators: true };
+  Profile.findByIdAndUpdate(request.params.id, request.body, options)
+    .then((updatedProfile) => {
+      if (!updatedProfile) return next(new HttpErrors(404, 'profile not found'));
+      return response.json(updatedProfile);
+    })
+    .catch(next);
 });
 
 

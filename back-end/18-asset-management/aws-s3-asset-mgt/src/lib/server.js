@@ -25,6 +25,7 @@ const corsOptions = {
   // origin: process.env.CORS_ORIGINS,
   // "origin" defines what front end domains are permitted to access our API, we need to implement this to prevent any potential attacks
   origin: (origin, cb) => {
+    // console.log(origin, 'what')
     if (origin.includes(process.env.CORS_ORIGINS)) {
       cb(null, true);
     } else {

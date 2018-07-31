@@ -67,6 +67,7 @@ accountSchema.methods.createTokenPromise = function createTokenPromise() {
 
 
 const skipInit = process.env.NODE_ENV === 'development';
+console.log(skipInit, 'skipInit');
 const Account = mongoose.model('accounts', accountSchema, 'accounts', skipInit);
 // this is static method on the schema constructor itself
 // this method is used during signup to create a new account in our database
