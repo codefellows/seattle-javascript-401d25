@@ -13,6 +13,7 @@ import loggerMiddleware from '../lib/middleware/logger-middleware';
 import authRouter from '../router/auth-router';
 import profileRouter from '../router/profile-router';
 import soundRouter from '../router/sound-router';
+import googleOAuthRouter from '../router/google-oauth-router';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,11 +27,23 @@ const corsOptions = {
   // "origin" defines what front end domains are permitted to access our API, we need to implement this to prevent any potential attacks
   origin: (origin, cb) => {
     // console.log(origin, 'what')
-    if (origin.includes(process.env.CORS_ORIGINS)) {
+    console.log(origin)
+    console.log(cb)
+    if (!origin) {
+      // assume Google API or Cypress
+      cb(null, true);
+    } else if (origin.includes(process.env.CORS_ORIGINS)) {
       cb(null, true);
     } else {
       throw new Error(`${origin} not allowed by CORS`);
     }
+    // if (origin.includes(process.env.CORS_ORIGINS)) {
+    //   cb(null, true);
+    // } else if (!origin) {
+    //   cb(null, true);
+    // } else {
+    //   throw new Error(`${origin} not allowed by CORS`);
+    // }
   },
   credentials: true, // Configures the Access-Control-Allow-Credentials CORS header. Set to true to pass the header, otherwise it is omitted.
 };
@@ -43,8 +56,10 @@ app.use(loggerMiddleware);
 app.use(authRouter);
 app.use(profileRouter);
 app.use(soundRouter);
+app.use(googleOAuthRouter);
 // catch all
 app.use(errorMiddleWare);
+
 app.all('*', (request, response) => {
   console.log('Returning a 404 from the catch/all route');
   return response.sendStatus(404).send('Route Not Registered');

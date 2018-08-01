@@ -28,9 +28,9 @@ profileRouter.post('/api/profiles', bearerAuthMiddleware, (request, response, ne
   return undefined;
 });
 
+// TODO: make a "me" route
 profileRouter.get('/api/profiles/me', bearerAuthMiddleware, (request, response, next) => {
   if (!request.account) return next(new HttpErrors(400, 'GET PROFILE ROUTER-AUTH: invalid request'));
-
   return Profile.findOne({ accountId: request.account._id })
     .then((profile) => {
       if (!profile) return next(new HttpErrors(404, 'not found'));
