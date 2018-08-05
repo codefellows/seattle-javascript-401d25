@@ -82,9 +82,9 @@ googleOAuthRouter.get('/api/oauth/google', (request, response, next) => {
       const cookieOptions = { maxAge: 7 * 1000 * 60 * 60 * 24 };
       // This will not work on outside of localhost
       response.cookie('X-401d25-Token', accessToken, cookieOptions);
-      response.redirect(process.env.CLIENT_URL);
+      return response.redirect(process.env.CLIENT_URL);
     })
-    .catch(next)
+    .catch(next);
 });
 
 export default googleOAuthRouter;
