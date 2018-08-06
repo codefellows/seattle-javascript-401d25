@@ -1,4 +1,5 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 42: Sql vs NoSql
+![cf](http://i.imgur.com/7v5ASc8.png) 
+# 42: Sql vs NoSql
 
 ## Learning Objectives
 * Students will learn the basics of using Sequelize, the ORM for SQL-based languages including Postgres
