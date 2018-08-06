@@ -103,7 +103,6 @@ export default class AuthForm extends React.Component {
   }
 
   render() {
-    console.log(this.props, 'props auth form')
     let { type } = this.props;
     // if the "type" prop is already equal to login, keep it as "login", otherwise, if not, set it "signup"
     type = type === 'login' ? type : 'signup'; 
