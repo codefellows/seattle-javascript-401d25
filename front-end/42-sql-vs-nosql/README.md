@@ -7,7 +7,7 @@
 * Students will learn how to determine if they should use an ORM or not
 
 ## Readings
-* Read [Should I Or Should I Not Use ORM?](https://developers.google.com/identity/protocols/OAuth2UserAgent)
+* Read [Should I Or Should I Not Use ORM?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce)
 * Read [SQL vs NoSQL](https://medium.com/xplenty-blog/the-sql-vs-nosql-difference-mysql-vs-mongodb-32c9980e67b2)
 * Skim [Sequlize docs](http://docs.sequelizejs.com/manual/installation/getting-started.html)
 
