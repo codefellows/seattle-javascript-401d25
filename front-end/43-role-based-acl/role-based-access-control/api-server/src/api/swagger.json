@@ -1,0 +1,69 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "N/A",
+    "version" : "1",
+    "title" : "Core API"
+  },
+  "host" : "localhost:3000",
+  "basePath" : "/api/v1",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/categories" : {
+      "get" : {
+        "description" : "Get all categories",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Returned a list of categories",
+            "schema" : {
+              "$ref" : "#/definitions/getAll"
+            }
+          }
+        }
+      },
+      "post" : {
+        "description" : "Create a new resource for a given model",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "record",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Category"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Returned the created category",
+            "schema" : {
+              "$ref" : "#/definitions/Category"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Category" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      },
+      "example" : {
+        "name" : "name"
+      }
+    },
+    "getAll" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : { }
+      },
+      "example" : [ "{}", "{}" ]
+    }
+  }
+}
